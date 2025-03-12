@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Tips Academy F.C.</title>
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Swiper.js para el slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./img/logotips.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <img src="./img/logotips.png" alt="Logo Tips Academy" class="logo">
+        <h3>TIPS ACADEMY F.C.</h3>
+        <div class="menu-hamburguesa">☰</div>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="plantilla.html">Plantilla</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+        </ul>
+    </nav>
+
+    <!-- Slider de imágenes -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/equipo.png" alt="Equipo"></div>
+            <div class="swiper-slide"><img src="./img/partido.png" alt="Partido"></div>
+        </div>
+    </div>
+
+    <!-- Mensaje de bienvenida -->
+    <section class="bienvenida">
+        <h1>Bienvenidos a Tips Academy F.C.</h1>
+        <p>Pasión, esfuerzo y espíritu de equipo.</p>
+    </section>
+
+    <!-- Enlaces rápidos -->
+    <section class="enlaces-rapidos">
+        <a href="plantilla.html">
+            <div class="tarjeta">
+                <h3>Plantilla</h3>
+                <p>Conoce a nuestros jugadores.</p>
+            </div>
+        </a>
+        <a href="calendario.html">
+            <div class="tarjeta">
+                <h3>Calendario</h3>
+                <p>Próximos partidos y eventos.</p>
+            </div>
+        </a>
+        <a href="noticias.html">
+            <div class="tarjeta">
+                <h3>Noticias</h3>
+                <p>Últimas actualizaciones.</p>
+            </div>
+        </a>
+    </section>
+
+    <!-- Próximo partido -->
+    <section class="proximo-partido">
+        <h2>Próximo Partido</h2>
+        <div class="partido-info">
+            <p>Aston Birra vs Tips Academy F.C.</p>
+            <p>16 de Marzo | 14:45h</p>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-texto">
+                <h3>Tips Academy F.C.</h3>
+                <p>© 2025 Todos los derechos reservados</p>
+            </div>
+            <div class="redes-sociales">
+                <a href="https://youtube.com/tipsacademy" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://instagram.com/tipsacademy" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Añade esto en el <head> para Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</body>
+</html>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Inicializar el slider
+        new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: { delay: 3000 }
+        });
+
+        // Menú hamburguesa para móviles
+        document.querySelector('.menu-hamburguesa').addEventListener('click', () => {
+            document.querySelector('.menu').classList.toggle('activo');
+        });
+    </script>
+</body>
+</html>

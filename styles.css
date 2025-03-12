@@ -1,0 +1,487 @@
+/* styles.css */
+/* Variables y estilos globales */
+:root {
+    --azul: #0055A4;
+    --blanco: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: var(--azul);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h3 {
+    color: white;
+}
+
+.logo {
+    height: 60px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+}
+
+.menu-hamburguesa {
+    display: none;
+    color: var(--blanco);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Slider */
+.swiper-container {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Mensaje de bienvenida */
+.bienvenida {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: var(--blanco);
+}
+
+.bienvenida h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--azul);
+    font-size: 2.5rem;
+}
+
+/* Enlaces rápidos */
+.enlaces-rapidos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+.enlaces-rapidos a {
+    text-decoration: none;
+}
+
+.tarjeta {
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Próximo partido */
+.proximo-partido {
+    background-color: #f0f0f0;
+    padding: 2rem;
+    text-align: center;
+}
+
+.proximo-partido h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--azul);
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-texto h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.redes-sociales a {
+    color: var(--blanco);
+    font-size: 1.8rem;
+    margin-left: 1.5rem;
+    transition: opacity 0.3s;
+}
+
+.redes-sociales a:hover {
+    opacity: 0.8;
+}
+
+/* Estilos específicos de la plantilla */
+.jugadores {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jugadores h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--azul);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.grid-jugadores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.jugador {
+    text-align: center;
+    border: 2px solid var(--azul);
+    border-radius: 8px;
+    padding: 1rem;
+    transition: transform 0.3s;
+}
+
+.jugador:hover {
+    transform: translateY(-5px);
+}
+
+.jugador img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.staff {
+    padding: 2rem;
+    background-color: #f0f0f0;
+}
+
+.staff h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--azul);
+    text-align: center;
+}
+
+.grid-staff {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-left: 20%;
+}
+
+.grid-staff img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    margin: auto;
+    padding: auto;
+}
+
+/* Estilos del calendario */
+.calendario {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.calendario h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--azul);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.calendario-contenedor {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .calendario {
+        padding: 1rem;
+    }
+
+    .calendario-contenedor iframe {
+        height: 400px;
+    }
+}
+
+/* Estilos del calendario */
+.calendario-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mes {
+    margin-bottom: 3rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+}
+
+.mes h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--azul);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.calendario {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendario th {
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 0.8rem;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.calendario td {
+    width: 14.28%;
+    height: 100px;
+    vertical-align: top;
+    border: 1px solid #e0e0e0;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.dia {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    color: #666;
+}
+
+.evento {
+    background: #f8f9fa;
+    padding: 0.3rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.tipo-partido {
+    color: var(--azul);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.tipo-entrenamiento {
+    color: #28a745;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+/* Estilos específicos para noticias */
+.contenedor-noticias {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.articulos h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--azul);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.tarjeta-articulo {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.tarjeta-articulo img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.contenido-articulo {
+    padding: 1.5rem;
+}
+
+.categoria {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.resultados {
+    background-color: #28a745;
+    color: white;
+}
+
+.fichajes {
+    background-color: var(--azul);
+    color: white;
+}
+
+.meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.leer-mas {
+    color: var(--azul);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* Sidebar */
+.sidebar {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.widget {
+    margin-bottom: 2rem;
+}
+
+.widget h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--azul);
+    margin-bottom: 1rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .contenedor-noticias {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta-articulo img {
+        height: 200px;
+    }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .calendario td {
+        height: 80px;
+        padding: 0.3rem;
+    }
+    
+    .evento {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendario th {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+    
+    .calendario td {
+        height: 60px;
+    }
+    
+    .mes {
+        padding: 0.5rem;
+    }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: var(--azul);
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .menu.activo {
+        display: flex;
+    }
+
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    .swiper-container {
+        height: 300px;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .redes-sociales a {
+        margin: 0 0.8rem;
+    }
+
+    .grid-jugadores {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-jugadores {
+        grid-template-columns: 1fr;
+    }
+}

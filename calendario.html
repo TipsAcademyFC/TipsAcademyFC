@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario - Tips Academy F.C.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="./img/logotips.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <img src="./img/logotips.png" alt="Logo Tips Academy" class="logo">
+        <h3>TIPS ACADEMY F.C.</h3>
+        <div class="menu-hamburguesa">☰</div>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="plantilla.html">Plantilla</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+        </ul>
+    </nav>
+
+    <!-- Calendario -->
+    <section class="calendario-container">
+        <h1>Calendario 2025</h1>
+        
+        <!-- Mes Octubre -->
+        <div class="mes">
+            <h2>Marzo</h2>
+            <table class="calendario">
+                <thead>
+                    <tr>
+                        <th>Lun</th>
+                        <th>Mar</th>
+                        <th>Mié</th>
+                        <th>Jue</th>
+                        <th>Vie</th>
+                        <th>Sáb</th>
+                        <th>Dom</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="evento-entrenamiento">
+                            <div class="dia">9</div>
+                            <div class="evento">
+                                <span class="tipo-entrenamiento">Partido</span>
+                                <div>Tips Academy F.C. vs Sporting Zamora A.K.P.M.</div>
+                                <div>19:45 - 20:40h</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Más filas -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="evento-entrenamiento">
+                            <div class="dia">16</div>
+                            <div class="evento">
+                                <span class="tipo-entrenamiento">Partido</span>
+                                <div>Aston Birra vs Tips Academy F.C.</div>
+                                <div>14:45 - 15:40h</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Más filas -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="evento-entrenamiento">
+                            <div class="dia">23</div>
+                            <div class="evento">
+                                <span class="tipo-entrenamiento">Partido</span>
+                                <div>Tips Academy F.C. vs C.D. Harlem</div>
+                                <div>14:45 - 15:40h</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Más filas -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="evento-entrenamiento">
+                            <div class="dia">30</div>
+                            <div class="evento">
+                                <span class="tipo-entrenamiento">Partido</span>
+                                <div>Real Fermines vs Tips Academy F.C.</div>
+                                <div>18:30 - 19:25</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-texto">
+                <h3>Tips Academy F.C.</h3>
+                <p>© 2025 Todos los derechos reservados</p>
+            </div>
+            <div class="redes-sociales">
+                <a href="https://youtube.com/tipsacademy" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://instagram.com/tipsacademy" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menú hamburguesa (mismo script que el índice)
+        document.querySelector('.menu-hamburguesa').addEventListener('click', () => {
+            document.querySelector('.menu').classList.toggle('activo');
+        });
+    </script>
+</body>
+</html>

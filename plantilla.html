@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla - Tips Academy F.C.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./img/logotips.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Barra de navegación (igual que el índice) -->
+    <nav class="navbar">
+        <img src="./img/logotips.png" alt="Logo Tips Academy" class="logo">
+        <h3>TIPS ACADEMY F.C.</h3>
+        <div class="menu-hamburguesa">☰</div>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="plantilla.html">Plantilla</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de jugadores -->
+    <section class="jugadores">
+        <h1>Nuestros Jugadores</h1>
+        <div class="grid-jugadores">
+            <!-- Ejemplo de jugador -->
+            <div class="jugador">
+                <img src="./img/ivan.png" alt="Jugador 1">
+                <h3>Konstantín</h3>
+                <p>Dorsal: 1</p>
+                <p>Posición: Portero</p>
+            </div>
+
+            <div class="jugador">
+                <img src="./img/zamora.png" alt="Jugador 1">
+                <h3>Zamora</h3>
+                <p>Dorsal: 8</p>
+                <p>Posición: Defensa</p>
+            </div>
+
+            <div class="jugador">
+                <img src="./img/juan.png" alt="Jugador 1">
+                <h3>Juan</h3>
+                <p>Dorsal: 19</p>
+                <p>Posición: Centrocampista</p>
+            </div>
+
+            <div class="jugador">
+                <img src="./img/miku.png" alt="Jugador 1">
+                <h3>Miku</h3>
+                <p>Dorsal: 4</p>
+                <p>Posición: Centrocampista</p>
+            </div>
+
+            <div class="jugador">
+                <img src="./img/palo.png" alt="Jugador 1">
+                <h3>Palomita</h3>
+                <p>Dorsal: 69</p>
+                <p>Posición: Centrocampista</p>
+            </div>
+
+            <div class="jugador">
+                <img src="./img/cuchito.png" alt="Jugador 1">
+                <h3>Cuchito</h3>
+                <p>Dorsal: 1</p>
+                <p>Posición: Delantero</p>
+            </div>
+            <!-- Repite para más jugadores -->
+        </div>
+    </section>
+
+    <!-- Sección del staff -->
+    <section class="staff">
+        <h2>Cuerpo Técnico</h2>
+        <div class="grid-staff">
+            <div class="miembro">
+                <img src="./img/cuchito.png" alt="Presidente">
+                <h3>Manuel Zamora</h3>
+                <p>Presidente</p>
+            </div>
+            <div class="miembro">
+                <img src="./img/ivan.png" alt="Secretario">
+                <h3>Iván Konstantin Rodríguez</h3>
+                <p>Secretaria</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (igual que el índice) -->
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-texto">
+                <h3>Tips Academy F.C.</h3>
+                <p>© 2025 Todos los derechos reservados</p>
+            </div>
+            <div class="redes-sociales">
+                <a href="https://youtube.com/tipsacademy" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://instagram.com/tipsacademy" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menú hamburguesa (mismo script que el índice)
+        document.querySelector('.menu-hamburguesa').addEventListener('click', () => {
+            document.querySelector('.menu').classList.toggle('activo');
+        });
+    </script>
+</body>
+</html>

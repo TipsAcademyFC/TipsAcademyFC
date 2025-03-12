@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - Tips Academy F.C.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="./img/logotips.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <img src="./img/logotips.png" alt="Logo Tips Academy" class="logo">
+        <h3>TIPS ACADEMY F.C.</h3>
+        <div class="menu-hamburguesa">☰</div>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="plantilla.html">Plantilla</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="contenedor-noticias">
+        <!-- Sección de artículos -->
+        <section class="articulos">
+            <h1>Últimas Noticias</h1>
+            
+            <!-- Artículo 1 -->
+            <article class="tarjeta-articulo">
+                <img src="./img/equipo.png" alt="Último partido">
+                <div class="contenido-articulo">
+                    <span class="categoria resultados">Resultados</span>
+                    <h2>Victoria épica contra Los Leones FC</h2>
+                    <p class="meta">Publicado el 5 de Octubre | Por Prensa del Club</p>
+                    <p>Nuestro equipo demostró gran carácter remontando un 2-0 en el segundo tiempo...</p>
+                    <a href="#" class="leer-mas">Leer más →</a>
+                </div>
+            </article>
+
+            <!-- Artículo 2 -->
+            <article class="tarjeta-articulo">
+                <img src="" alt="Nuevo fichaje">
+                <div class="contenido-articulo">
+                    <span class="categoria fichajes">Fichajes</span>
+                    <h2>Presentación de nuestro nuevo delantero</h2>
+                    <p class="meta">Publicado el 3 de Octubre | Por Departamento Deportivo</p>
+                    <p>Juan Martínez se une al equipo con un contrato por dos temporadas...</p>
+                    <a href="#" class="leer-mas">Leer más →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <!-- Widget de Twitter -->
+            <div class="widget">
+                <h3>Síguenos en Twitter</h3>
+                <a class="twitter-timeline" 
+                   href="https://twitter.com/TipsAcademyFC" 
+                   data-height="400"
+                   data-chrome="nofooter">
+                </a>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-texto">
+                <h3>Tips Academy F.C.</h3>
+                <p>© 2025 Todos los derechos reservados</p>
+            </div>
+            <div class="redes-sociales">
+                <a href="https://youtube.com/tipsacademy" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://instagram.com/tipsacademy" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script async src="https://platform.twitter.com/widgets.js"></script>
+    <script>
+        // Menú hamburguesa
+        document.querySelector('.menu-hamburguesa').addEventListener('click', () => {
+            document.querySelector('.menu').classList.toggle('activo');
+        });
+    </script>
+</body>
+</html>
