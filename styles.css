@@ -245,6 +245,38 @@ body {
     }
 }
 
+/* Correcciones para móvil */
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+        z-index: 1000;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: var(--azul);
+    }
+
+    /* Eliminar espacio blanco en el footer */
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    .footer {
+        margin-top: auto;
+    }
+}
+
 /* Estilos del calendario */
 .calendario-container {
     padding: 2rem;
