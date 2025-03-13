@@ -124,6 +124,7 @@ iframe {
     width: 80%;
     height: 800px; /* Ajusta la altura según sea necesario */
     border: none;
+    border-radius: 1%;
 }
 
 /* Footer */
