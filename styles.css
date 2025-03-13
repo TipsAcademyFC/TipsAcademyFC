@@ -118,13 +118,20 @@ body {
     margin-bottom: 1rem;
 }
 
-iframe {
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    height: 800px; /* Ajusta la altura según sea necesario */
-    border: none;
-    border-radius: 1%;
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Esto mantiene la relación de aspecto 16:9 */
+    height: 0; /* Altura inicial en 0 */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ancho al 100% del contenedor */
+    height: 85%; /* Altura al 100% del contenedor */
+    border: none; /* Sin borde */
 }
 
 /* Footer */
