@@ -213,6 +213,7 @@ body {
 .staff {
     padding: 2rem;
     background-color: #f0f0f0;
+    margin: auto;
 }
 
 .staff h2 {
@@ -231,7 +232,11 @@ body {
 }
 
 .miembro {
-    margin: auto;
+    text-align: center;
+    border: 2px solid var(--azul);
+    border-radius: 8px;
+    padding: 1rem;
+    transition: transform 0.3s;
 }
 
 .grid-staff img {
