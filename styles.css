@@ -239,6 +239,10 @@ body {
     transition: transform 0.3s;
 }
 
+.miembro:hover {
+    transform: translateY(-5px);
+}
+
 .grid-staff img {
     width: 150px;
     height: 150px;
