@@ -238,8 +238,6 @@ body {
     border-radius: 8px;
     padding: 1rem;
     transition: transform 0.3s;
-    margin-left: 30%;
-    margin-right: 30%;
 }
 
 .miembro:hover {
