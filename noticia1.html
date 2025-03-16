@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria épica contra Los Leones FC - Tips Academy F.C.</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS general -->
+    <link rel="stylesheet" href="noticia.css"> <!-- CSS específico para la noticia -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="./img/logotips.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <a href="index.html"><img src="./img/logotips.png" alt="Logo Tips Academy" class="logo"></a>
+        <a href="index.html"><h3>TIPS ACADEMY F.C.</h3></a>
+        <div class="menu-hamburguesa">☰</div>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="plantilla.html">Plantilla</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido de la noticia -->
+    <main class="contenedor-noticia">
+        <h1>Victoria épica contra Los Leones FC</h1>
+        <div class="noticia-contenido"> <!-- Clase específica para el contenido de la noticia -->
+            <div class="texto-noticia">
+                <p class="meta">Publicado el 5 de Octubre | Por Prensa del Club</p>
+                <p>Nuestro equipo demostró gran carácter remontando un 2-0 en el segundo tiempo...</p>
+                <p>En un emocionante partido, Tips Academy F.C. logró una victoria impresionante contra Los Leones FC. A pesar de comenzar el segundo tiempo con un marcador adverso, el equipo mostró una gran determinación y habilidad para revertir la situación...</p>
+                <p>Los goles fueron anotados por Juan y Miku, quienes se destacaron en el campo. La afición estuvo al borde de sus asientos, animando a su equipo hasta el último minuto.</p>
+                <p>¡Gracias a todos los que apoyaron al equipo en este emocionante encuentro!</p>
+            </div>
+            <div class="imagen-noticia-container">
+                <img src="./img/equipo.png" alt="Último partido" class="imagen-noticia">
+                <p class="pie-imagen">Celebración del equipo tras la victoria.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-texto">
+                <h3>Tips Academy F.C.</h3>
+                <p>© 2025 Todos los derechos reservados</p>
+            </div>
+            <div class="redes-sociales">
+                <a href="https://www.youtube.com/@TipsAcademyFC" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/tipsacademyfc/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menú hamburguesa
+        document.querySelector('.menu-hamburguesa').addEventListener('click', () => {
+            document.querySelector('.menu').classList.toggle('activo');
+        });
+    </script>
+</body>
+</html>
