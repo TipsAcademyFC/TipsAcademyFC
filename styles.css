@@ -590,6 +590,18 @@ body {
     .grid-jugadores {
         grid-template-columns: 1fr 1fr;
     }
+
+    .noticia-contenido {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+
+    .texto-noticia {
+        padding-right: 0; /* Elimina el padding en pantallas pequeñas */
+    }
+
+    .imagen-noticia-container {
+        order: -1; /* Asegura que la imagen se muestre primero */
+    }
 }
 
 @media (max-width: 480px) {
