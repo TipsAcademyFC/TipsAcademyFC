@@ -145,7 +145,7 @@ body {
 .titulo-calendario {
   text-align: center;
   padding: 3rem 1rem;
-  background-color: white;
+  
   margin: 0 0 -3rem;
   box-sizing: border-box;
   display: block;
@@ -168,6 +168,14 @@ body {
 
 #jornada {
   margin: 1rem;
+}
+
+#clasificacion {
+  margin-bottom: 2rem;
+  text-align: center;
+  height: 10rem;
+  border-radius: 10rem;
+  border: 1px solid black;
 }
 
 /*Noticias*/
