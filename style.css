@@ -178,6 +178,12 @@ body {
   border: 1px solid black;
 }
 
+#tabla-copa {
+  text-align: center;
+  border: 1px solid black;
+  background-color: white;
+}
+
 /*Noticias*/
 .titulo-noticias {
   text-align: center;
